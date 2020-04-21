@@ -3,19 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67E6A6525B64D5BE16D5D68F /* libPods-Final Project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7E71AD95E05DDF1D0767FD /* libPods-Final Project.a */; };
+		776E9D01244F1E420084197B /* dictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E9D00244F1E420084197B /* dictionaryViewController.swift */; };
+		776E9D03244F31B50084197B /* SwiftOxfordAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E9D02244F31B50084197B /* SwiftOxfordAPI.swift */; };
+		776E9D05244F3DA40084197B /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E9D04244F3DA40084197B /* Word.swift */; };
 		778B0FC1244C68C300019C22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B0FC0244C68C300019C22 /* AppDelegate.swift */; };
 		778B0FC3244C68C300019C22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B0FC2244C68C300019C22 /* SceneDelegate.swift */; };
 		778B0FC5244C68C300019C22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B0FC4244C68C300019C22 /* ViewController.swift */; };
 		778B0FC8244C68C300019C22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778B0FC6244C68C300019C22 /* Main.storyboard */; };
 		778B0FCA244C68C400019C22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 778B0FC9244C68C400019C22 /* Assets.xcassets */; };
 		778B0FCD244C68C400019C22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778B0FCB244C68C400019C22 /* LaunchScreen.storyboard */; };
+		778B0FD7244D847100019C22 /* StudyModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B0FD6244D847100019C22 /* StudyModeViewController.swift */; };
+		778E990A244EE0D200AF0E3D /* APIkeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E9909244EE0D200AF0E3D /* APIkeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2828965B3AAF1A14E1451FD1 /* Pods-Final Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final Project.release.xcconfig"; path = "Target Support Files/Pods-Final Project/Pods-Final Project.release.xcconfig"; sourceTree = "<group>"; };
+		776E9D00244F1E420084197B /* dictionaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dictionaryViewController.swift; sourceTree = "<group>"; };
+		776E9D02244F31B50084197B /* SwiftOxfordAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOxfordAPI.swift; sourceTree = "<group>"; };
+		776E9D04244F3DA40084197B /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		778B0FBD244C68C300019C22 /* Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		778B0FC0244C68C300019C22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		778B0FC2244C68C300019C22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,10 @@
 		778B0FC9244C68C400019C22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		778B0FCC244C68C400019C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		778B0FCE244C68C400019C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		778B0FD6244D847100019C22 /* StudyModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyModeViewController.swift; sourceTree = "<group>"; };
+		778E9909244EE0D200AF0E3D /* APIkeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIkeys.swift; sourceTree = "<group>"; };
+		7F7E71AD95E05DDF1D0767FD /* libPods-Final Project.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Final Project.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3CAC40BA77D7D369C0F90F5 /* Pods-Final Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final Project.debug.xcconfig"; path = "Target Support Files/Pods-Final Project/Pods-Final Project.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67E6A6525B64D5BE16D5D68F /* libPods-Final Project.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AFBBD4CC8C9B7C5032E5F97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F7E71AD95E05DDF1D0767FD /* libPods-Final Project.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BD1C665E3F233FAF6846402 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3CAC40BA77D7D369C0F90F5 /* Pods-Final Project.debug.xcconfig */,
+				2828965B3AAF1A14E1451FD1 /* Pods-Final Project.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		778B0FB4244C68C300019C22 = {
 			isa = PBXGroup;
 			children = (
 				778B0FBF244C68C300019C22 /* Final Project */,
 				778B0FBE244C68C300019C22 /* Products */,
+				4BD1C665E3F233FAF6846402 /* Pods */,
+				0AFBBD4CC8C9B7C5032E5F97 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +90,14 @@
 		778B0FBF244C68C300019C22 /* Final Project */ = {
 			isa = PBXGroup;
 			children = (
+				778E9909244EE0D200AF0E3D /* APIkeys.swift */,
 				778B0FC0244C68C300019C22 /* AppDelegate.swift */,
 				778B0FC2244C68C300019C22 /* SceneDelegate.swift */,
+				776E9D02244F31B50084197B /* SwiftOxfordAPI.swift */,
+				776E9D04244F3DA40084197B /* Word.swift */,
+				776E9D00244F1E420084197B /* dictionaryViewController.swift */,
 				778B0FC4244C68C300019C22 /* ViewController.swift */,
+				778B0FD6244D847100019C22 /* StudyModeViewController.swift */,
 				778B0FC6244C68C300019C22 /* Main.storyboard */,
 				778B0FC9244C68C400019C22 /* Assets.xcassets */,
 				778B0FCB244C68C400019C22 /* LaunchScreen.storyboard */,
@@ -74,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 778B0FD1244C68C400019C22 /* Build configuration list for PBXNativeTarget "Final Project" */;
 			buildPhases = (
+				B3244718E7ED26676C63B8D1 /* [CP] Check Pods Manifest.lock */,
 				778B0FB9244C68C300019C22 /* Sources */,
 				778B0FBA244C68C300019C22 /* Frameworks */,
 				778B0FBB244C68C300019C22 /* Resources */,
+				C3F27A3A41FBC34563647C7D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,14 +174,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B3244718E7ED26676C63B8D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Final Project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3F27A3A41FBC34563647C7D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Final Project/Pods-Final Project-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Final Project/Pods-Final Project-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Final Project/Pods-Final Project-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		778B0FB9244C68C300019C22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				778E990A244EE0D200AF0E3D /* APIkeys.swift in Sources */,
+				776E9D05244F3DA40084197B /* Word.swift in Sources */,
 				778B0FC5244C68C300019C22 /* ViewController.swift in Sources */,
 				778B0FC1244C68C300019C22 /* AppDelegate.swift in Sources */,
 				778B0FC3244C68C300019C22 /* SceneDelegate.swift in Sources */,
+				776E9D01244F1E420084197B /* dictionaryViewController.swift in Sources */,
+				776E9D03244F31B50084197B /* SwiftOxfordAPI.swift in Sources */,
+				778B0FD7244D847100019C22 /* StudyModeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +370,7 @@
 		};
 		778B0FD2244C68C400019C22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3CAC40BA77D7D369C0F90F5 /* Pods-Final Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +388,7 @@
 		};
 		778B0FD3244C68C400019C22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2828965B3AAF1A14E1451FD1 /* Pods-Final Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
