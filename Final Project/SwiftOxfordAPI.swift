@@ -8,13 +8,23 @@
 
 import Foundation
 public class SwiftOxfordAPI{
-    private struct results{
-        var lexicalEntries: [lexicalEntries]
+//    private struct results: Codable{
+//        var lexicalEntries: [lexicalEntries]
+//    }
+    private struct Results: Codable{
+        var id: String
+        var lexicalEntries: [LexicalEntry]
     }
-    var definitions = ""
-    var wordArray: [lexicalEntries] = []
-    
-    
+    private struct LexicalEntry: Codable{
+        var entries: [Entry]
+    }
+    private struct Entry: Codable{
+        var senses: [Sense]
+    }
+    private struct Sense: Codable{
+        var definitions: [String]
+    }
+
     
     let appId = "d068abad"
     let appKey = "68e38766d0409e0ca71fa2bbb96d466b"
@@ -31,23 +41,28 @@ public class SwiftOxfordAPI{
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         request.addValue(appId, forHTTPHeaderField: "app_id")
         request.addValue(appKey, forHTTPHeaderField: "app_key")
-
+        print("\(request)")
         let session = URLSession.shared
         let task = session.dataTask(with: request, completionHandler: { data, response, error in
             if let response = response,
                 let data = data,
                 let jsonData = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) {
-                print(response)
-                print(jsonData)
+                //print(response)
+                print("***\(jsonData)")
             }
             else {
                 print(error)
                 print(NSString.init(data: data!, encoding: String.Encoding.utf8.rawValue))
             }
-//            do{
-//                let returned = try JSONDecoder().decode(results.self, from: data!)
+            do{
+                let returned = try JSONDecoder().decode(Results.self, from: data!)
+                print("*** \(returned)")
+                //print("*** \(returned.lexicalEntries[0].entries[0].senses[0].definitions[0])")
 //                self.definitions = self.wordArray + returned.lexicalEntries
-//            }
+            }
+            catch{
+                print("error could not decode JSON \(error)")
+            }
         }).resume()
     }
 }
