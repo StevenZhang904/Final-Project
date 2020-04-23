@@ -86,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4408" y="145"/>
+            <point key="canvasLocation" x="-3615" y="145"/>
         </scene>
         <!--Dictionary View Controller-->
         <scene sceneID="bsY-6D-Y9O">
@@ -149,6 +149,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GpU-vd-vGt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-5282" y="907"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="Fbs-1h-7TI">
+            <objects>
+                <viewController id="Yq7-rT-g2J" customClass="MapViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Meu-9T-W3f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UqY-NV-kmh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4gA-MM-IfE">
+                                <rect key="frame" x="0.0" y="504" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" systemItem="done" id="9Ma-XJ-HzW"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZDV-I3-gvL" firstAttribute="trailing" secondItem="UqY-NV-kmh" secondAttribute="trailing" id="2fq-DL-9Ur"/>
+                            <constraint firstItem="ZDV-I3-gvL" firstAttribute="trailing" secondItem="UqY-NV-kmh" secondAttribute="trailing" id="P02-Tn-mdZ"/>
+                            <constraint firstItem="UqY-NV-kmh" firstAttribute="leading" secondItem="ZDV-I3-gvL" secondAttribute="leading" id="QGF-Te-qbv"/>
+                            <constraint firstItem="ZDV-I3-gvL" firstAttribute="bottom" secondItem="UqY-NV-kmh" secondAttribute="bottom" id="R1x-Au-GC7"/>
+                            <constraint firstItem="4gA-MM-IfE" firstAttribute="top" secondItem="UqY-NV-kmh" secondAttribute="bottom" id="qhc-WG-vqS"/>
+                            <constraint firstItem="UqY-NV-kmh" firstAttribute="top" secondItem="ZDV-I3-gvL" secondAttribute="top" id="yeL-ho-pKA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZDV-I3-gvL"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="UqY-NV-kmh" id="hBw-6k-mF2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Edr-s6-Hdr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3615" y="-585"/>
         </scene>
         <!--Study Mode View Controller-->
         <scene sceneID="WZM-Gt-Po8">
@@ -218,6 +255,9 @@
                                         <state key="normal" title="Where are you">
                                             <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Yq7-rT-g2J" kind="showDetail" identifier="ShowMap" id="sM2-9X-gqf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
