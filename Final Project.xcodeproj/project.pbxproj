@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		67E6A6525B64D5BE16D5D68F /* libPods-Final Project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7E71AD95E05DDF1D0767FD /* libPods-Final Project.a */; };
+		77347E2A24535645003EE295 /* LocationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77347E2924535645003EE295 /* LocationSearchViewController.swift */; };
 		776E9D01244F1E420084197B /* dictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E9D00244F1E420084197B /* dictionaryViewController.swift */; };
 		776E9D03244F31B50084197B /* SwiftOxfordAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E9D02244F31B50084197B /* SwiftOxfordAPI.swift */; };
-		776E9D05244F3DA40084197B /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E9D04244F3DA40084197B /* Word.swift */; };
 		77812B1A245093B6002F4BD9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77812B19245093B6002F4BD9 /* MapViewController.swift */; };
 		778B0FC1244C68C300019C22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B0FC0244C68C300019C22 /* AppDelegate.swift */; };
 		778B0FC3244C68C300019C22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B0FC2244C68C300019C22 /* SceneDelegate.swift */; };
@@ -24,9 +24,9 @@
 
 /* Begin PBXFileReference section */
 		2828965B3AAF1A14E1451FD1 /* Pods-Final Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final Project.release.xcconfig"; path = "Target Support Files/Pods-Final Project/Pods-Final Project.release.xcconfig"; sourceTree = "<group>"; };
+		77347E2924535645003EE295 /* LocationSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchViewController.swift; sourceTree = "<group>"; };
 		776E9D00244F1E420084197B /* dictionaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dictionaryViewController.swift; sourceTree = "<group>"; };
 		776E9D02244F31B50084197B /* SwiftOxfordAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOxfordAPI.swift; sourceTree = "<group>"; };
-		776E9D04244F3DA40084197B /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		77812B19245093B6002F4BD9 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		778B0FBD244C68C300019C22 /* Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		778B0FC0244C68C300019C22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,12 +95,12 @@
 				778E9909244EE0D200AF0E3D /* APIkeys.swift */,
 				778B0FC0244C68C300019C22 /* AppDelegate.swift */,
 				778B0FC2244C68C300019C22 /* SceneDelegate.swift */,
-				776E9D02244F31B50084197B /* SwiftOxfordAPI.swift */,
-				776E9D04244F3DA40084197B /* Word.swift */,
-				776E9D00244F1E420084197B /* dictionaryViewController.swift */,
 				778B0FC4244C68C300019C22 /* ViewController.swift */,
+				776E9D00244F1E420084197B /* dictionaryViewController.swift */,
+				776E9D02244F31B50084197B /* SwiftOxfordAPI.swift */,
 				778B0FD6244D847100019C22 /* StudyModeViewController.swift */,
 				77812B19245093B6002F4BD9 /* MapViewController.swift */,
+				77347E2924535645003EE295 /* LocationSearchViewController.swift */,
 				778B0FC6244C68C300019C22 /* Main.storyboard */,
 				778B0FC9244C68C400019C22 /* Assets.xcassets */,
 				778B0FCB244C68C400019C22 /* LaunchScreen.storyboard */,
@@ -225,9 +225,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				778E990A244EE0D200AF0E3D /* APIkeys.swift in Sources */,
-				776E9D05244F3DA40084197B /* Word.swift in Sources */,
 				778B0FC5244C68C300019C22 /* ViewController.swift in Sources */,
 				778B0FC1244C68C300019C22 /* AppDelegate.swift in Sources */,
+				77347E2A24535645003EE295 /* LocationSearchViewController.swift in Sources */,
 				77812B1A245093B6002F4BD9 /* MapViewController.swift in Sources */,
 				778B0FC3244C68C300019C22 /* SceneDelegate.swift in Sources */,
 				776E9D01244F1E420084197B /* dictionaryViewController.swift in Sources */,

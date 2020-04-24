@@ -13,15 +13,15 @@ public class SwiftOxfordAPI{
 //    }
     private struct Results: Codable{
         var id: String
-        var lexicalEntries: [LexicalEntry]
+        var lexicalEntries: [lexicalEntries]
     }
-    private struct LexicalEntry: Codable{
-        var entries: [Entry]
+    private struct lexicalEntries: Codable{
+        var entries: [entries]
     }
-    private struct Entry: Codable{
-        var senses: [Sense]
+    private struct entries: Codable{
+        var senses: [senses]
     }
-    private struct Sense: Codable{
+    private struct senses: Codable{
         var definitions: [String]
     }
 
@@ -56,6 +56,7 @@ public class SwiftOxfordAPI{
             }
             do{
                 let returned = try JSONDecoder().decode(Results.self, from: data!)
+                print("***")
                 print("*** \(returned)")
                 //print("*** \(returned.lexicalEntries[0].entries[0].senses[0].definitions[0])")
 //                self.definitions = self.wordArray + returned.lexicalEntries

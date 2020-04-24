@@ -36,7 +36,7 @@ class StudyModeViewController: UIViewController {
             let destination = segue.destination as! dictionaryViewController
         }
         else if segue.identifier == "ShowMap"{
-            let destination = segue.destination as! MapViewController
+            let destination = segue.destination as! UINavigationController
         }
        
     }

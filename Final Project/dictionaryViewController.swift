@@ -14,7 +14,6 @@ class dictionaryViewController: UIViewController {
     var API = SwiftOxfordAPI()
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     @IBAction func search(_ sender: UIButton) {

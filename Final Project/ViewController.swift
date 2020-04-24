@@ -44,9 +44,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                 goButton.isEnabled = false
             }
         }
-    
-        //var time: Time!
-        
+            
     
         override func viewDidLoad() {
             super.viewDidLoad()
