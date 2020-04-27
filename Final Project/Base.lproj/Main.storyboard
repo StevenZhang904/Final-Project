@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Focus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,7 +91,7 @@
         <!--Dictionary View Controller-->
         <scene sceneID="bsY-6D-Y9O">
             <objects>
-                <viewController id="oJH-ZJ-zxb" customClass="dictionaryViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oJH-ZJ-zxb" customClass="dictionaryViewController" customModule="Focus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8fM-1v-fgZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,19 +102,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Word" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xiA-n2-PTJ">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xiA-n2-PTJ">
                                 <rect key="frame" x="16" y="168" width="288" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DMs-tR-irV">
-                                <rect key="frame" x="16" y="270" width="288" height="266"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tex-fQ-okz">
                                 <rect key="frame" x="126.5" y="226" width="67" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -123,37 +115,47 @@
                                     <action selector="search:" destination="oJH-ZJ-zxb" eventType="touchUpInside" id="PYm-Lp-0BD"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhN-4y-FKw">
+                                <rect key="frame" x="16" y="270" width="288" height="258"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="Ygx-sL-avo"/>
+                                    <constraint firstAttribute="height" constant="258" id="nkX-xl-Jle"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Wp4-Cy-QPq" firstAttribute="bottom" secondItem="DMs-tR-irV" secondAttribute="bottom" constant="32" id="34d-L0-1yH"/>
                             <constraint firstItem="Wp4-Cy-QPq" firstAttribute="trailing" secondItem="1jb-BM-1qD" secondAttribute="trailing" constant="16" id="5jT-6s-4bu"/>
                             <constraint firstItem="Tex-fQ-okz" firstAttribute="centerX" secondItem="8fM-1v-fgZ" secondAttribute="centerX" id="8c1-en-2sk"/>
                             <constraint firstItem="1jb-BM-1qD" firstAttribute="top" secondItem="Wp4-Cy-QPq" secondAttribute="top" constant="100" id="KKJ-dL-9P2"/>
                             <constraint firstItem="xiA-n2-PTJ" firstAttribute="top" secondItem="1jb-BM-1qD" secondAttribute="bottom" constant="15" id="Onz-SH-laH"/>
                             <constraint firstItem="Wp4-Cy-QPq" firstAttribute="trailing" secondItem="xiA-n2-PTJ" secondAttribute="trailing" constant="16" id="TRS-0e-fnb"/>
                             <constraint firstItem="xiA-n2-PTJ" firstAttribute="leading" secondItem="Wp4-Cy-QPq" secondAttribute="leading" constant="16" id="Tvb-fs-AOv"/>
+                            <constraint firstItem="Wp4-Cy-QPq" firstAttribute="trailing" secondItem="jhN-4y-FKw" secondAttribute="trailing" constant="16" id="W4F-Na-xWm"/>
+                            <constraint firstItem="Wp4-Cy-QPq" firstAttribute="bottom" secondItem="jhN-4y-FKw" secondAttribute="bottom" constant="20" id="WhX-jG-Ia6"/>
+                            <constraint firstItem="jhN-4y-FKw" firstAttribute="leading" secondItem="Wp4-Cy-QPq" secondAttribute="leading" constant="16" id="ncz-4I-ojO"/>
                             <constraint firstItem="1jb-BM-1qD" firstAttribute="leading" secondItem="Wp4-Cy-QPq" secondAttribute="leading" constant="16" id="qbv-At-7bQ"/>
-                            <constraint firstItem="Wp4-Cy-QPq" firstAttribute="trailing" secondItem="DMs-tR-irV" secondAttribute="trailing" constant="16" id="rs2-hy-Vnz"/>
                             <constraint firstItem="Tex-fQ-okz" firstAttribute="top" secondItem="xiA-n2-PTJ" secondAttribute="bottom" constant="15" id="uva-hz-52e"/>
-                            <constraint firstItem="DMs-tR-irV" firstAttribute="leading" secondItem="Wp4-Cy-QPq" secondAttribute="leading" constant="16" id="y6i-5T-7xl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wp4-Cy-QPq"/>
                     </view>
                     <navigationItem key="navigationItem" id="Sm7-P6-ldn"/>
                     <connections>
-                        <outlet property="answerTextView" destination="DMs-tR-irV" id="IYT-ge-4IL"/>
+                        <outlet property="results" destination="jhN-4y-FKw" id="KFm-qz-Gap"/>
                         <outlet property="wordSearched" destination="xiA-n2-PTJ" id="25K-Ll-T95"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GpU-vd-vGt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5282" y="907"/>
+            <point key="canvasLocation" x="-5283.75" y="906.33802816901414"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="Fbs-1h-7TI">
             <objects>
-                <viewController id="Yq7-rT-g2J" customClass="MapViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Yq7-rT-g2J" customClass="MapViewController" customModule="Focus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Meu-9T-W3f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,7 +188,7 @@
         <!--Location Search View Controller-->
         <scene sceneID="PjL-CJ-ItQ">
             <objects>
-                <viewController storyboardIdentifier="LocationSearchTable" id="Jng-G0-JBV" customClass="LocationSearchViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LocationSearchTable" id="Jng-G0-JBV" customClass="LocationSearchViewController" customModule="Focus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zYY-PH-Y3L">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -242,7 +244,7 @@
         <!--Study Mode View Controller-->
         <scene sceneID="WZM-Gt-Po8">
             <objects>
-                <viewController id="Nbv-Xu-9N4" customClass="StudyModeViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Nbv-Xu-9N4" customClass="StudyModeViewController" customModule="Focus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TPd-VZ-y2v" customClass="S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -250,9 +252,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QVI-7M-Yr8">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zYJ-6c-g1K">
-                                        <rect key="frame" x="135.5" y="196" width="51" height="31"/>
-                                    </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sc-77-hAY">
                                         <rect key="frame" x="96.5" y="277" width="127.5" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -318,9 +317,7 @@
                                     <constraint firstAttribute="trailing" secondItem="fiZ-de-7by" secondAttribute="trailing" constant="8" id="5sG-Oo-P0G"/>
                                     <constraint firstItem="aek-Fb-UpV" firstAttribute="centerX" secondItem="QVI-7M-Yr8" secondAttribute="centerX" id="Ac8-Sa-a9R"/>
                                     <constraint firstAttribute="bottom" secondItem="fiZ-de-7by" secondAttribute="bottom" constant="87" id="BeZ-NV-cxM"/>
-                                    <constraint firstItem="zYJ-6c-g1K" firstAttribute="centerX" secondItem="QVI-7M-Yr8" secondAttribute="centerX" id="Nhq-VB-nSO"/>
                                     <constraint firstItem="jSh-cz-TeU" firstAttribute="top" secondItem="9sc-77-hAY" secondAttribute="bottom" constant="80" id="Xpp-9h-fUu"/>
-                                    <constraint firstItem="9sc-77-hAY" firstAttribute="top" secondItem="zYJ-6c-g1K" secondAttribute="bottom" constant="50" id="ZMP-nJ-WiQ"/>
                                     <constraint firstItem="fiZ-de-7by" firstAttribute="top" secondItem="jSh-cz-TeU" secondAttribute="bottom" constant="8" symbolic="YES" id="bhF-VU-b3Q"/>
                                     <constraint firstItem="aek-Fb-UpV" firstAttribute="top" secondItem="QVI-7M-Yr8" secondAttribute="top" constant="100" id="fpk-ga-d7N"/>
                                     <constraint firstItem="9sc-77-hAY" firstAttribute="centerX" secondItem="QVI-7M-Yr8" secondAttribute="centerX" id="ieO-XF-pLb"/>
@@ -339,7 +336,6 @@
                     </view>
                     <connections>
                         <outlet property="startButton" destination="jSh-cz-TeU" id="74z-Ea-ynL"/>
-                        <outlet property="studyModeSwitch" destination="zYJ-6c-g1K" id="od2-hd-TXe"/>
                         <outlet property="timeLabel" destination="9sc-77-hAY" id="tcu-3Z-074"/>
                     </connections>
                 </viewController>

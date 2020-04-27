@@ -10,7 +10,9 @@ import UIKit
 
 class dictionaryViewController: UIViewController {
     @IBOutlet weak var wordSearched: UITextField!
-    @IBOutlet weak var answerTextView: UITextView!
+
+    @IBOutlet weak var results: UILabel!
+    var fl = ""
     var API = SwiftOxfordAPI()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,11 +20,13 @@ class dictionaryViewController: UIViewController {
     
     @IBAction func search(_ sender: UIButton) {
         API.word = wordSearched.text ?? "unknown"
-        API.getData()
+        API.getData {
+            DispatchQueue.main.async {
+                self.fl = self.API.a
+                self.results.text = "\(self.fl)"
+            }
+        }
+
+   
     }
-    
-    
-
-    
-
 }

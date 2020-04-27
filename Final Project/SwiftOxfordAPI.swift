@@ -6,11 +6,13 @@
 //  Copyright © 2020 张泽华. All rights reserved.
 //
 
+
 import Foundation
 public class SwiftOxfordAPI{
 //    private struct results: Codable{
 //        var lexicalEntries: [lexicalEntries]
 //    }
+    
     private struct Results: Codable{
         var id: String
         var lexicalEntries: [lexicalEntries]
@@ -32,9 +34,10 @@ public class SwiftOxfordAPI{
     var word = "ace"
     let fields = "definitions"
     let strictMatch = "false"
-   
+    var a = ""
     
-    func getData(){
+    func getData(completed: @escaping () ->()){
+        var final = ""
         let word_id = word.lowercased()
         let url = URL(string: "https://od-api.oxforddictionaries.com:443/api/v2/entries/\(language)/\(word_id)?fields=\(fields)&strictMatch=\(strictMatch)")!
         var request = URLRequest(url: url)
@@ -48,22 +51,44 @@ public class SwiftOxfordAPI{
                 let data = data,
                 let jsonData = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) {
                 //print(response)
-                print("***\(jsonData)")
+                //print("***\(jsonData)")
+                final = "\(jsonData)"
+                final = final.slice(from: "definitions =", to: "id")!
+                print("**\(final)")
+                self.a = final
+                print("***\(self.a)")
+                completed()
             }
             else {
-                print(error)
+                //print(error)
                 print(NSString.init(data: data!, encoding: String.Encoding.utf8.rawValue))
             }
             do{
                 let returned = try JSONDecoder().decode(Results.self, from: data!)
                 print("***")
                 print("*** \(returned)")
-                //print("*** \(returned.lexicalEntries[0].entries[0].senses[0].definitions[0])")
+                //print("*** \(returned["lexicalEntries"][0])")
+                //print("*** \(returned["lexicalEntries"][0].entries[0].senses[0].definitions[0])")
 //                self.definitions = self.wordArray + returned.lexicalEntries
             }
             catch{
                 print("error could not decode JSON \(error)")
             }
+            completed()
         }).resume()
+       
+    }
+    
+}
+
+
+extension String{
+    func slice(from: String, to: String) -> String? {
+
+        return (range(of: from)?.upperBound).flatMap { substringFrom in
+            (range(of: to, range: substringFrom..<endIndex)?.lowerBound).map { substringTo in
+                String(self[substringFrom..<substringTo])
+            }
+        }
     }
 }

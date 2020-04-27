@@ -11,7 +11,6 @@ import UserNotifications
 
 class StudyModeViewController: UIViewController {
 
-    @IBOutlet weak var studyModeSwitch: UISwitch!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
     
